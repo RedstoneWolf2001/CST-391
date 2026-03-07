@@ -4,4 +4,4 @@ Chris Peterson
 
 ---
 ### Activity 0
-[Activity 0](../CST-391/activities/activity_0/README.md)
+[Activity 0](../activities/activity_0/README.md)
