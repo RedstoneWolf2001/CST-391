@@ -4,27 +4,27 @@
 
 Chris Peterson
 
-![Picture1.png](/CST-391/activities/activity_0/Picture1.png)
+![Picture1.png](../activity_0/Picture1.png)
 
 Powershell check for node and npm
 
-![Picture2.png](/CST-391/activities/activity_0/Picture2.png)
+![Picture2.png](../activity_0/Picture2.png)
 
 javascript hello world
 
-![Picture3.png](/CST-391/activities/activity_0/Picture3.png)
+![Picture3.png](../activity_0/Picture3.png)
 
 nodeJS hello world
 
-![Picture4.png](/CST-391/activities/activity_0/Picture4.png)
+![Picture4.png](../activity_0/Picture4.png)
 
 nodemon hello world
 
-![Picture5.png](/CST-391/activities/activity_0/Picture5.png)
+![Picture5.png](../activity_0/Picture5.png)
 
 Typescript hello world
 
-![Picture6.png](/CST-391/activities/activity_0/Picture6.png)
+![Picture6.png](../activity_0/Picture6.png)
 
 Typescript nodemon hello world
 
