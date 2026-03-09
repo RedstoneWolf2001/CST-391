@@ -4,7 +4,7 @@ import artistsRouter from './artists/artists.routes';
 import logger from './middleware/logger.middleware';
 import cors from 'cors';
 import helmet from 'helmet';
-import * as dotenv from "dotenv";
+import dotenv from "dotenv";
 
 dotenv.config();
 
