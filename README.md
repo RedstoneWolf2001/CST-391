@@ -8,3 +8,7 @@ Chris Peterson
 
 ### Activity 1
 [Activity 1](/activities/activity_1/README.MD)
+
+---
+### Milestone 1
+[<sub>Not implemented yet</sub>](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
