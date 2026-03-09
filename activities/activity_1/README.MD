@@ -44,5 +44,5 @@ And a screenshot of the most system output from the SQL variables
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 Also have the lego set I completed while working on this 
-![legos](/activities/activity_1/images/PXL_20260309_075707376.RAW-01.COVER.jpg)
+![legos](/activities/activity_1/images/PXL_20260309_092223977.PORTRAIT.jpg)
 
