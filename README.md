@@ -11,4 +11,4 @@ Chris Peterson
 
 ---
 ### Milestone 1
-[<sub>Not implemented yet</sub>](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[Milestone 1](/milestones/milestone_1/Milestone1.md)
