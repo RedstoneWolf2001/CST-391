@@ -14,3 +14,5 @@ The instillation of Angular and how it's used in future apps will be entertainin
 CST-391<br>
 Chris Peterson
 
+![Angular pic 2](/activities/activity_2/Screenshot%202026-03-16%20024319.png)
+Here's the angular app running in VSCode along with the current Angular Version list
