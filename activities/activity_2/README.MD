@@ -16,3 +16,5 @@ Chris Peterson
 
 ![Angular pic 2](/activities/activity_2/Screenshot%202026-03-16%20024319.png)
 Here's the angular app running in VSCode along with the current Angular Version list
+
+Probably just the same conclusion of last time, I followed [your gitlab](https://gitlab.com/bobby.estey/gcu-cst391/-/blob/main/introduction/topics.md) basically to the letter so maybe? 
