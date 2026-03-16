@@ -7,3 +7,10 @@ Angular stock test app page
 
 ### Conclusion
 The instillation of Angular and how it's used in future apps will be entertaining to devlop with.
+
+
+# Activity 2 
+### Attempt 2
+CST-391<br>
+Chris Peterson
+
