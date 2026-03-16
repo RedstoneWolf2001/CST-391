@@ -1,20 +1,52 @@
 # Activity 2
-CST-391<br>
-Chris Peterson
 
-![Angular Pic](/activities/activity_2/2026-03-13.png)
-Angular stock test app page
+Chris Peterson<br>
+March 16 2026
 
-### Conclusion
-The instillation of Angular and how it's used in future apps will be entertaining to devlop with.
+## Introduction
+
+[Angular](https://angular.dev/) is a TypeScript-based free and open-source single-page web application framework, developed by Google.  This activity will install the Angular software and start up an instance of an Angular application 
+
+## Activity 2 Commands
+
+- Install the latest version of Angular
+
+```
+npm install -g @angular/cli@latest
+```
+
+![bweh](/activities/activity_2/Screenshot%202026-03-16%20031216.png)
+*Install complete, mostly just making sure everything was updated*<br><br>
+
+- Display the Angular Version
+
+```
+ng version
+```
+
+![bwehh](/activities/activity_2/Screenshot%202026-03-16%20031344.png)
+*Here's the versions I used for this assignment*<br><br>
+
+- Create a new Angular project, this case we will call testapp
+
+```
+ng new testapp
+```
+
+![bwehhh](/activities/activity_2/Screenshot%202026-03-16%20034015.png)
+*Install successful*<br><br>
 
 
-# Activity 2 
-### Attempt 2
-CST-391<br>
-Chris Peterson
+- Change directory to the new project and start the server
 
-![Angular pic 2](/activities/activity_2/Screenshot%202026-03-16%20024319.png)
-Here's the angular app running in VSCode along with the current Angular Version list
+```
+cd testapp
+ng serve
+```
 
-Probably just the same conclusion of last time, I followed [your gitlab](https://gitlab.com/bobby.estey/gcu-cst391/-/blob/main/introduction/topics.md) basically to the letter so maybe? 
+![bwehhhh](/activities/activity_2/Screenshot%202026-03-16%20034538.png)
+*Test app running*<br><br>
+
+## Conclusion
+
+- This was a simple assignment of implementing a hello world Angular program.
