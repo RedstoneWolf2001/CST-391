@@ -12,18 +12,18 @@ As a user, I want to download sermons from the website and listen to them offlin
 As an admin, I want do upload sermons to the database and add tags that the user finds useful, such as the date, length, and topic.<br>
 
 ## ER Diagram
-![ER](/milestones/milestone_1/Database%20Design%20ER.png)
+![ER](../images/Database%20Design%20ER.png)
 
 ## Site Diagram
-![Site](/milestones/milestone_1/Site%20Diagram.png)
+![Site](../images/Site%20Diagram.png)
 
 ## Wireframe
 
-![Wireframe](/milestones/milestone_1/Wireframe.png)
+![Wireframe](../images/Wireframe.png)
 
 ## UML Diagram
 
-![UML](/milestones/milestone_1/UML%20Diagrams.png)
+![UML](../images/UML%20Diagrams.png)
 
 ### Conclusion
 This is going to be a good way to learn how JavaScript and NodeJs work out. This milestone is also allowing me to lay out what I plan on working on soon.
