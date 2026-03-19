@@ -16,3 +16,6 @@ Chris Peterson
 ---
 ### Milestone 1
 [Milestone 1](/milestones/milestone_1/Milestone1.md)
+
+### Milestone 2
+[Milestone 2](/milestones/milestone_2/Milestone2.md)
