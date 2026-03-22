@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="musicApp">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music API AngularJS Client</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="MusicController as vm">
+  <div class="container">
+    <h1>MusicAPI AngularJS</h1>
+
+    <section class="card">
+      <h2>Search</h2>
+      <div class="row">
+        <label>Artist:</label>
+        <input type="text" ng-model="vm.searchArtist" placeholder="Search by artist" />
+        <button ng-click="vm.searchByArtist()">Search</button>
+      </div>
+      <div class="row">
+        <label>Description:</label>
+        <input type="text" ng-model="vm.searchDescription" placeholder="Search by description" />
+        <button ng-click="vm.searchByDescription()">Search</button>
+      </div>
+      <div class="row">
+        <button ng-click="vm.loadAlbums()">Load all albums</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Create / Update Album</h2>
+      <form ng-submit="vm.submitAlbum()">
+        <div class="row"><label>Album ID:</label><input type="number" ng-model="vm.editAlbum.albumId" /></div>
+        <div class="row"><label>Title:</label><input type="text" required ng-model="vm.editAlbum.title" /></div>
+        <div class="row"><label>Artist:</label><input type="text" required ng-model="vm.editAlbum.artist" /></div>
+        <div class="row"><label>Description:</label><input type="text" ng-model="vm.editAlbum.description" /></div>
+        <div class="row"><label>Genre:</label><input type="text" ng-model="vm.editAlbum.genre" /></div>
+        <div class="row"><label>Year:</label><input type="number" ng-model="vm.editAlbum.year" /></div>
+
+        <div class="row">
+          <button type="submit">{{vm.editMode ? 'Update' : 'Create'}} Album</button>
+          <button type="button" ng-click="vm.resetForm()">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Albums ({{vm.albums.length}})</h2>
+      <div class="album" ng-repeat="album in vm.albums">
+        <h3>{{album.title}} <em>({{album.artist}})</em></h3>
+        <p>{{album.description || 'No description'}} <strong>Genre:</strong> {{album.genre || 'N/A'}} <strong>Year:</strong> {{album.year || 'N/A'}}</p>
+        <button ng-click="vm.edit(album)">Edit</button>
+        <button ng-click="vm.delete(album.albumId)">Delete</button>
+        <div ng-if="album.tracks && album.tracks.length">
+          <strong>Tracks:</strong>
+          <ul>
+            <li ng-repeat="track in album.tracks">{{track.trackNumber}}. {{track.trackTitle}} ({{track.duration}})</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section ng-if="vm.error" class="error">Error: {{vm.error}}</section>
+    <section ng-if="vm.loading" class="loading">Loading…</section>
+  </div>
+</body>
+</html>

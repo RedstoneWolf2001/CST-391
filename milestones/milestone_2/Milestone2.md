@@ -15,30 +15,125 @@
 - As a user, I want to download sermons from the website and listen to them offline, or stream them straight from the site.
 - As an Admin, I want do upload sermons to the database and add tags that the user finds useful, such as the date, length, and topic.
 
-
-## Sitemap
+## Images
+### Sitemap
 
 - Below is the Sitemap
 
 ![Site](../images/Site%20Diagram.png)
 
-## Wireframes
+### Wireframes
 
 - Below is the Wireframe for the basic portal of the site
 
 ![Wireframe](../images/Wireframe.png)
 
-## Database Design
+### Database Design
 
 - The following diagram is the Entity Relationship Diagram (ERD) showing how the databse interacts internally
 
 ![ER](../images/Database%20Design%20ER.png)
 
-## Class Diagrams
+### Class Diagrams
 
 - The following diagrams are the Class diagrams showing how the site's databse interacts with the frontend
 
 ![UML](../images/Updated%20UML%20Diagrams.png)
+
+## Mermaid Diagrams
+
+### Entity-Relationship Diagram
+
+```mermaid
+erDiagram
+    SERMON {
+        int sermon_ID
+        string title
+        string description
+        string speaker
+        string _tags
+        date date
+        float duration
+        string audio_URL
+    }
+    TAGS {
+        int tag_ID
+        string title
+        string description
+    }
+
+    SERMON ||--o{ TAGS : "has"
+```
+
+### Class Diagram
+
+```mermaid
+classDiagram
+    class Admin {
+        - int admin_ID
+        + string Username
+        + string PasswordHash
+        + manageSermon()
+        + manageTag()
+        + manageUser()
+    }
+    class User {
+        - int user_ID
+        + string Username
+        + string PasswordHash
+        + downloadSermon()
+        + viewTags()
+    }
+    class Sermon {
+        - int sermon_ID
+        + string title
+        + string description
+        + string speaker
+        + string _tags
+        + datetime date
+        + float duration
+        + string audio_URL
+    }
+    class _tags {
+        - int _tags_ID
+        + string tag
+        + string description
+    }
+
+    Admin "1" o-- "1..*" Sermon : manages
+    Admin "1" o-- "1..*" _tags : manages
+    User "1" o-- "0..*" Sermon : downloads
+    User "1" o-- "0..*" _tags : views
+    Sermon "0..*" o-- "1..*" _tags : tagged_with
+```
+
+### Sitemap Flow
+
+```mermaid
+graph TD
+    Home[Home]
+    Browse[Browse Sermons]
+    Search[Search]
+    Login[Login]
+    Upload[Admin Upload]
+
+    Home --> Browse
+    Browse --> Search
+    Browse --> Login
+    Login -->|Admin?| Upload
+    Upload --> Browse
+``` 
+
+### Wireframe Layout
+
+```mermaid
+graph TB
+    SermonsSection["Sermons\n(Play)|Sermon Title|Direct Link\n..."]
+    AdminSection["Admin\n[Upload]\nTitle\nDescription\nSpeaker\nTags\n[Post]"]
+
+    SermonsSection --> AdminSection
+```
+
 
 ## REST Endpoints
 
