@@ -12,6 +12,9 @@ Chris Peterson
 ### Activity 2
 [Activity 2](/activities/activity_2/README.MD)
 
+### Activity 3
+[Activity 3](/activities/activity_3/README.MD)
+
 
 ---
 ### Milestone 1
